@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "bot.py", "use": "@now/python" }
+    { "src": "bot.py", "use": "@now/python", "config": { "maxLambdaSize": "10mb" } }
   ],
   "routes": [{ "src": "/.*", "dest": "bot.py" }]
 }
